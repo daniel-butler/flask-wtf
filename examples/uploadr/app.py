@@ -17,7 +17,7 @@ app.config.from_object(__name__)
 def index():
 
     form = FileUploadForm()
-    for i in range(5):
+    for _ in range(5):
         form.uploads.append_entry()
 
     filedata = []

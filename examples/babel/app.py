@@ -39,8 +39,6 @@ def get_locale():
 @app.route("/", methods=("GET", "POST",))
 def index():
     form = BabelForm()
-    if form.validate_on_submit():
-        pass
     return render_template("index.html", form=form)
 
 

@@ -15,8 +15,7 @@ class Flask(_Flask):
 
 @pytest.fixture
 def app():
-    app = Flask(__name__)
-    return app
+    return Flask(__name__)
 
 
 @pytest.yield_fixture
